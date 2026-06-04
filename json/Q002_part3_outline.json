@@ -1,0 +1,69 @@
+{
+  "id": "Q002_part3",
+  "outline": [
+    {
+      "step": 1,
+      "title": "审题",
+      "content": "直线 l: y = -x + 3 与 x 轴、y 轴分别交于 B、C，抛物线 y = -x² + bx + c 经过 B、C，并与 x 轴的另一个交点为 A；Q 是半径为 2 的 ⊙B 上的动点，求 4QC + 2QA 的最小值。"
+    },
+    {
+      "step": 2,
+      "title": "确定坐标",
+      "content": "由前两问或图中结论可得 B(3,0)、C(0,3)、A(-1,0)，因此 OB = OC = 3，AB = 4。"
+    },
+    {
+      "step": 3,
+      "title": "提取公因子",
+      "content": "4QC + 2QA = 4(QC + 1/2QA)，问题转化为求 QC + 1/2QA 的最小值。"
+    },
+    {
+      "step": 4,
+      "title": "构造辅助点 D",
+      "content": "在 OB 上取点 D，使 BD = 1，则 OD = OB - BD = 2，D(2,0)，连接 CD、QD。"
+    },
+    {
+      "step": 5,
+      "title": "计算 CD",
+      "content": "在直角三角形 COD 中，CD = √(OC² + OD²) = √(3² + 2²) = √13。"
+    },
+    {
+      "step": 6,
+      "title": "证明比值",
+      "content": "因为 Q 在半径为 2 的 ⊙B 上，所以 BQ = 2；又 BA = 4、BD = 1，故 BD/BQ = BQ/BA = 1/2。"
+    },
+    {
+      "step": 7,
+      "title": "证明相似",
+      "content": "由于 D、B、A 共线，∠QBD = ∠ABQ，结合 BD/BQ = BQ/BA，由 SAS 得 △BDQ ∽ △BQA。"
+    },
+    {
+      "step": 8,
+      "title": "线段替换",
+      "content": "由相似可得 QD/QA = BQ/BA = 1/2，即 QD = 1/2QA，所以 QC + 1/2QA = CQ + QD。"
+    },
+    {
+      "step": 9,
+      "title": "求最小值",
+      "content": "由两点之间线段最短，CQ + QD ≥ CD = √13，当 C、Q、D 三点共线时取等号。"
+    },
+    {
+      "step": 10,
+      "title": "得出结论",
+      "content": "QC + 1/2QA 的最小值为 √13，因此 4QC + 2QA 的最小值为 4√13。"
+    }
+  ],
+  "keyKnowledge": [
+    {
+      "name": "阿氏圆",
+      "description": "通过在定线段上构造辅助点 D，把含系数的距离和 QC + 1/2QA 转化为 CQ + QD。"
+    },
+    {
+      "name": "相似三角形（SAS）",
+      "description": "利用 BD/BQ = BQ/BA 和夹角相等证明 △BDQ ∽ △BQA，从而得到 QD = 1/2QA。"
+    },
+    {
+      "name": "两点之间线段最短",
+      "description": "将 CQ + QD 的最小值转化为线段 CD，并在 C、Q、D 三点共线时取到最小值。"
+    }
+  ]
+}

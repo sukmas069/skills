@@ -1,0 +1,64 @@
+{
+  "id": "Q002_part3",
+  "outline": [
+    {
+      "step": 1,
+      "title": "审题",
+      "content": "Q 是 ⊙B（半径为 2）上的动点，B(3,0)，C(0,3)，A(-1,0)。求 4QC + 2QA 的最小值。"
+    },
+    {
+      "step": 2,
+      "title": "提取公因子",
+      "content": "4QC + 2QA = 4(QC + ½QA)，问题转化为求 QC + ½QA 的最小值。"
+    },
+    {
+      "step": 3,
+      "title": "构造辅助点 D",
+      "content": "在 OB 上取点 D，使 BD = 1，则 OD = OB - BD = 3 - 1 = 2，D(2,0)。连接 CD、QD。"
+    },
+    {
+      "step": 4,
+      "title": "计算已知量",
+      "content": "OB = OC = 3，AB = 3 - (-1) = 4，CD = √(OC² + OD²) = √(9 + 4) = √13。"
+    },
+    {
+      "step": 5,
+      "title": "证明比值关系",
+      "content": "BQ/BA = 2/4 = ½，BD/BQ = 1/2 = ½，因此 BD/BQ = BQ/BA = ½。"
+    },
+    {
+      "step": 6,
+      "title": "证明 △BDQ ∽ △BQA",
+      "content": "BD/BQ = BQ/BA = ½，∠QBD = ∠ABQ（公共角），由 SAS 得 △BDQ ∽ △BQA。"
+    },
+    {
+      "step": 7,
+      "title": "线段替换",
+      "content": "由相似得 QD/QA = BQ/BA = ½，即 QD = ½QA。因此 QC + ½QA = CQ + QD。"
+    },
+    {
+      "step": 8,
+      "title": "求最小值",
+      "content": "CQ + QD ≥ CD = √13（三点共线时取等号），即 CQ + ½QA 最小值为 √13。"
+    },
+    {
+      "step": 9,
+      "title": "得出结论",
+      "content": "4QC + 2QA = 4(CQ + ½QA) ≥ 4√13，最小值为 4√13。"
+    }
+  ],
+  "keyKnowledge": [
+    {
+      "name": "阿氏圆",
+      "description": "圆上动点 Q 到两定点 B、A 距离之比 BQ/BA 为常数时，可构造辅助点 D 使 △BDQ ∽ △BQA，从而将系数转化为线段。"
+    },
+    {
+      "name": "相似三角形（SAS）",
+      "description": "两边成比例且夹角相等，两三角形相似。对应边成比例用于线段替换：QD = ½QA。"
+    },
+    {
+      "name": "三点共线最值",
+      "description": "两点之间线段最短。CQ + QD ≥ CD，等号在 C、Q、D 共线时成立。"
+    }
+  ]
+}
